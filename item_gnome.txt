@@ -1,0 +1,81 @@
+item_gnome
+
+[OBJECT:ITEM]
+
+[ITEM_WEAPON:ITEM_WEAPON_RIFLE_GNOME]// My attempt at gunpowder weapons.}
+	[NAME:gnomish rifle:gnomish rifles]
+	[SIZE:200]:400  Revision: balanced weapon sizes.}
+	[TWO_HANDED:200001] // No creature should be able to onehand a rifle
+	[SKILL:HAMMER]
+	[RANGED:CROSSBOW:SHOT]
+	[SHOOT_FORCE:6000]:1000  Revision: balanced with the ammunition.}
+	[SHOOT_MAXVEL:4500]:200}
+	[TWO_HANDED:200001]
+	[MINIMUM_SIZE:15000]
+	[MATERIAL_SIZE:9]:3  Revision: balanced the required materials to make them.}
+	?  Revision: weapon attacks have changed too much for sane commentary.}
+	[ATTACK:BLUNT:200:4000:bash:bashes:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:7:4]
+
+[ITEM_WEAPON:ITEM_WEAPON_PISTOL_GNOME]// My attempt at gunpowder weapons.}
+	[NAME:gnomish pistol:gnomish pistols]
+	[SIZE:50]:400  Revision: balanced weapon sizes.}
+	[SKILL:HAMMER]
+	[RANGED:CROSSBOW:SHOT]
+	[SHOOT_FORCE:3000]:1000  Revision: balanced with the ammunition.}
+	[SHOOT_MAXVEL:4500]:200}
+	[MINIMUM_SIZE:5000]
+	[MATERIAL_SIZE:3]:3  Revision: balanced the required materials to make them.}
+	?  Revision: weapon attacks have changed too much for sane commentary.}
+	[ATTACK:BLUNT:200:4000:bash:bashes:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:7:4]
+
+[ITEM_AMMO:ITEM_AMMO_SHOT_GNOME]
+		[NAME:shot:shot]
+		[CLASS:SHOT]
+		[SIZE:6]{:150}
+		[ATTACK:EDGE:8:740:stab:stabs:NO_SUB:200]
+			[ATTACK_PREPARE_AND_RECOVER:9:4]
+		[ATTACK:EDGE:8:740:thrust:thrusts:NO_SUB:200]  fake
+			[ATTACK_PREPARE_AND_RECOVER:9:4]
+		[ATTACK:EDGE:80:4:cut:cuts:NO_SUB:50]
+			[ATTACK_PREPARE_AND_RECOVER:5:4]
+
+
+[ITEM_HELM:ITEM_HELM_GOGGLES_GNOME]
+		[NAME:gnomish goggles:gnomish goggles]
+		[LAYER:UNDER]
+		[COVERAGE:25]
+		[ARMORLEVEL:0]
+		[MATERIAL_SIZE:2]
+		[LAYER_SIZE:2]
+		[METAL]
+
+[ITEM_HELM:ITEM_HELM_MASK_GNOME]
+		[NAME:tinkering mask:tinkering masks]
+		[LAYER:COVER]
+		[COVERAGE:85]
+		[MATERIAL_SIZE:12]
+		[ARMORLEVEL:3]
+		[LAYER_SIZE:30]
+		[LAYER_PERMIT:20]
+		[SHAPED]
+		[METAL]
+
+[ITEM_SHIELD:ITEM_SHIELD_GNOME]
+		[NAME:mechano-shield:mechano-shields]
+		[ARMORLEVEL:3]
+		[BLOCKCHANCE:85]:10  Revision: increase the block chance.}
+		[MATERIAL_SIZE:9]:2  Revision: balanced the required materials to make them.}
+
+[ITEM_WEAPON:ITEM_DRILL_GNOME]
+		[NAME:gnomish drill:gnomish drills]
+		[SIZE:230]:500  Revision: balanced weapon sizes.}
+		[SKILL:MINING]
+		[TWO_HANDED:47500]
+		[MINIMUM_SIZE:15000]
+		[MATERIAL_SIZE:3]:4  Revision: balanced the required materials to make them.}
+		?  Revision: weapon attacks have changed too much for sane commentary.}
+		[ATTACK:EDGE:12:2500:strike:strikes:NO_SUB:3000]
+			[ATTACK_PREPARE_AND_RECOVER:12:10]
+			[ATTACK_FLAG_BAD_MULTIATTACK]
